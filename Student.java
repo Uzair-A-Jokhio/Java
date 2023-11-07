@@ -4,9 +4,9 @@ public class Student {
     String  Name;
     double CGPA;
     private double marks = 86; 
-
     void result(){
-        System.err.println("Name: " + Name +  "\nCGPA: " + CGPA + "\nDepartment: " + Dept );
+        System.out.println("Name: " + Name +  "\nCGPA: " + CGPA + "\nDepartment: " + Dept + 
+        "\nMarks: " + marks);
     }
 
 
