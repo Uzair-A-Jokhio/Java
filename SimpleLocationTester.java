@@ -7,5 +7,6 @@ public class SimpleLocationTester {
         // duet.latitude = 54;
         // duet.setLatitude(30);
         System.out.println(duet.getLatitude());
+        System.out.println(duet.distance(Islamabad));
     }
 }

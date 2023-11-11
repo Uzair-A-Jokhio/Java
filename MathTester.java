@@ -8,7 +8,7 @@ public class MathTester {
 
     // }
     public static void main(String[] args){
-        Math shot = new Math();
+        Mathjava shot = new Mathjava();
         shot.series();
     }
 }

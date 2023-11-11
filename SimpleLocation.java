@@ -2,9 +2,10 @@ public class SimpleLocation{
     private double latitude;
     private double longitude;
 
+
     public SimpleLocation (double lat , double lon){
-        this.latitude = lat;
-        this.longitude = lon;
+        setLatitude(lat);
+        setLongitude(lon);
     }
     // example of a getter
     public double getLatitude(){
@@ -14,6 +15,7 @@ public class SimpleLocation{
     public double getLongitude(){
         return this.longitude;
     }
+
     // example of a setter
     public void setLatitude(double lat){
         if (lat < -90 || lat > 90 ){
@@ -29,5 +31,12 @@ public class SimpleLocation{
         } else{
             this.longitude = lon;
         }
+    }
+
+    public double distance(SimpleLocation other){
+        double y = Math.pow(other.latitude - this.latitude, 2);
+        double x = Math.pow(other.longitude - this.longitude, 2);
+        double d = Math.sqrt(x + y);
+        return d;
     }
 }

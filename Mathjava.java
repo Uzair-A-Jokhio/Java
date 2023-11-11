@@ -1,11 +1,11 @@
-public class Math {
+public class Mathjava {
 
 
     void Powtable(){
         int a = 1 ;
         System.out.println("a\t"+ "a^2\t" +  "a^3\t");
         for (int i= 1; i <= 4;i++){
-            System.out.println(a + "\t" +Math.pow(a, 2)+ "\t" + Math.pow(a,3));
+            System.out.println(a + "\t" +Mathjava.pow(a, 2)+ "\t" + Mathjava.pow(a,3));
             a += 1;
         }
     }
@@ -30,5 +30,11 @@ public class Math {
             System.out.println(num);
         }
         
+    }
+
+
+
+    public static double pow(double d, int i) {
+        return 0;
     }
 }
