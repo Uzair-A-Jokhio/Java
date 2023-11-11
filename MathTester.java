@@ -1,4 +1,4 @@
-public class Uni {
+public class MathTester {
     // public static void main(String[] args){
     //     Student s1 = new Student();
     //     s1.Name = "Shamir";
