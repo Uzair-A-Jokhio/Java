@@ -3,7 +3,7 @@ public class SimpleLocation{
     private double longitude;
 
 
-    public SimpleLocation (double lat , double lon){
+    public SimpleLocation(double lat , double lon){
         setLatitude(lat);
         setLongitude(lon);
     }

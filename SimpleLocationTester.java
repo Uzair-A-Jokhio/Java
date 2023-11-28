@@ -1,12 +1,11 @@
 public class SimpleLocationTester {
 
     public static void main(String[] args){
-        SimpleLocation Karachi = new SimpleLocation(24.86070, 67.00110);
-        SimpleLocation Islamabad = new SimpleLocation(33.68440, 73.04790);
-        SimpleLocation duet = new SimpleLocation(24.8788, 67.0475);
-        // duet.latitude = 54;
-        // duet.setLatitude(30);
-        System.out.println(duet.getLatitude());
-        System.out.println(duet.distance(Karachi));
-    }
+            SimpleLocation loc1 = new SimpleLocation(39.9, 116.4);
+            SimpleLocation loc2 = new SimpleLocation(55.8, 37.4);
+            loc1 = loc2;
+            loc1.setLatitude(-8.3);
+
+            System.out.println(loc2.getLatitude() + ", " + loc2.getLongitude());
+        }
 }
