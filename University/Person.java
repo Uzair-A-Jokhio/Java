@@ -1,23 +1,30 @@
 package University;
 
+
 public class Person extends Object {
     
-    private String name;
+    private String name, gender, PhoneNum;
     private int age;
-    private String gender;
-    private String PhoneNum;
+
 
     public Person(String name){
-        super();
+        this.name = name;
+    }
 
+    public String toString(){
+        return this.getName();
     }
 
 
+
+
+
+    
     // Name
     public void setName(String na) {this.name = na;}
     public String getName() {return this.name;}
     // Age
-    public void setAge(int a){this.age = a;}
+    public void setAge(Date a){this.age = a;}
     public int getAge(){return this.age;}
     // gender
     public void setGender(String gen){this.gender=gen;}
