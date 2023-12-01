@@ -14,8 +14,6 @@ public class Faculty extends Person {
         return this.getEID() + ": " + super.getName() ;
     }
 
-    
-    
 
 
 

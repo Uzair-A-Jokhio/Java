@@ -1,3 +1,4 @@
+package Games;
 
 /**
  * Random Guessing Game  

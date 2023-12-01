@@ -14,11 +14,12 @@ public class Student extends Person {
         return this.getSID() + ": " + super.getName() ;
     }
 
+    public boolean isAsleep(int hr){ return 2 < hr && 8 > hr ;}
 
 
 
 
-    
+
     public int getSID(){return this.studentID;}
     public void setgpa(double x){this.gpa = x;}
     public double getgpa(){return this.gpa;}
