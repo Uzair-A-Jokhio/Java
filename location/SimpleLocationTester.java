@@ -1,3 +1,5 @@
+package location;
+
 public class SimpleLocationTester {
 
     public static void main(String[] args){

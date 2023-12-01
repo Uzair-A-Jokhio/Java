@@ -1,3 +1,4 @@
+package location;
 public class SimpleLocation{
     private double latitude;
     private double longitude;
