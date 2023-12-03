@@ -21,6 +21,5 @@ public class CitySorter {
         for (String city : cities){
             System.out.println(city);
         }
-    }
-    
+    } 
 }

@@ -1,6 +1,5 @@
 package University.Faculty;
 
-import java.util.List;
 
 import University.Person;
 
@@ -12,8 +11,6 @@ public class _FacultyMember extends Person {
         super(name);
         // this.employeeID = eId;
     }
-
-
 
 //     public String toString(){
 //         return this.getEID() + ": " + super.getName() ;

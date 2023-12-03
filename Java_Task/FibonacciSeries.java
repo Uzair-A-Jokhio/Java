@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class FibonacciSeries {
     public static void main(String[] args) {
+        
         Scanner scanner = new Scanner(System.in);
 
         // Read the number of terms for Fibonacci series

@@ -21,20 +21,21 @@ public class Holiday {
     private int day;
 
 
-    public Holiday(String name, int day, String month){
+    public Holiday(String name, int day, String month){ //constructor 
         this.name = name;
         this.day = day;
         this.month = month;
     }
 
-    public boolean inSameMonth(Holiday otherHoliday ){
+    public boolean inSameMonth(Holiday otherHoliday ){ //method 
         return this.month == otherHoliday.month;
     }
+
     public static void main(String[] args) {
-        Holiday h1 = new Holiday("New year", 25, "Dec");
+        Holiday h1 = new Holiday("Christmas ", 25, "Dec");
         Holiday h2 = new Holiday("Quaid Birthday", 25, "Jan");
 
-        boolean sameMonth = h1.inSameMonth(h2);
+        boolean sameMonth = h1.inSameMonth(h2); // call method 
         System.out.println("Is same Month : " +  sameMonth);
 
     }

@@ -15,24 +15,23 @@ public class Matrix {
     private int numRow, numColumns;
     private int[][] matrix;
 
-    public Matrix(int row,int columns){
+    public Matrix(int row,int columns, int[][] matrix){
         this.numRow = row;
         this.numColumns = columns;
-        this.matrix =  new int[row][columns];
+        this.matrix =  matrix;
     }
 
-    public void setMatrix(int row, int colums, int value){
-        if(isValid(row, colums)){
-            matrix[row][colums] = value;
-        }
+    public  int getNumRow(){ 
+        return this.numRow;
+    }
+    public int getNumCol(){
+        return this.numColumns;
     }
     
-    private boolean isValid(int n, int m) {
-        return n >= 0 && m < this.numRow && m >= 0 && n < this.numColumns;
-    }
 
     public void display() {
         System.out.println("Matrix");
+
         for (int i = 0; i < numRow; i++) {
             for (int j = 0; j < numColumns; j++) {
                 System.out.print(matrix[i][j] + " ");
@@ -40,9 +39,17 @@ public class Matrix {
             System.out.println();
         }
     }
+    
     public static void main(String[] args) {
-        Matrix matrix = new Matrix(3, 03);
-        matrix.setMatrix(2, 02, 05);
+
+        int[][] matrixElements = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+            };
+        Matrix matrix = new Matrix(3, 03, matrixElements);
         matrix.display();
+        System.out.println("Number of Rows: " + matrix.getNumRow());
+        System.out.println("Number of Rows: " + matrix.getNumCol());
     }
 }
