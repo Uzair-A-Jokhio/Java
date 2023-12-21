@@ -4,6 +4,11 @@ package Sorting_Algorithms;
 public class SortingAlgorithm {
 
     public void Insertion_sort(int[] arr){
+        if (arr == null || arr.length <= 1) {
+            // Nothing to sort or handle accordingly
+            return;
+        }
+        // algorithm starts here
         int currInd, temp;
          
         for (int i = 0; i < arr.length; i++){
@@ -21,6 +26,12 @@ public class SortingAlgorithm {
     
     
     public void Bubble_sort(int[] arr){
+        if (arr == null || arr.length <= 1) {
+            // Nothing to sort or handle accordingly
+            return;
+        }
+        // algorithm starts here
+
         int temp;
         boolean swap;
         int n = arr.length;
@@ -46,6 +57,11 @@ public class SortingAlgorithm {
     
 
     public void Selection_sort(int[] arr){
+        if (arr == null || arr.length <= 1) {
+            // Nothing to sort or handle accordingly
+            return;
+        }
+        // algorithm starts here
 
         for (int i=0; i < arr.length - 1; i++){
 
