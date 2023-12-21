@@ -29,7 +29,7 @@ public class SearchAlgorithm {
         while (low <= high){
             mid = low + (high - low)/2;
             if (numbers[mid] == y)
-                return mid + 1 ;
+                return mid + 1 ; // mid + 1 because to get the actual array number ac
 
             if (numbers[mid] < y)
                 low = mid + 1;

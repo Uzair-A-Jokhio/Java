@@ -1,16 +1,51 @@
 package Sorting_Algorithms;
 
-import Searching_Algorithm.SearchAlgorithm;
 
 public class SortingAlgorithm {
+
+    public void Insertion_sort(int[] arr){
+        int currInd, temp;
+         
+        for (int i = 0; i < arr.length; i++){
+            currInd = i;
+            while (currInd > 0 && arr[currInd] < arr[currInd - 1]){
+                // swap 
+                temp = arr[currInd];
+                arr[currInd] = arr[currInd-1];
+                arr[currInd-1] = temp;
+                currInd = currInd -1;
+            }
+        }
+
+    }
     
     
-    public void Bubble_sort(int arr[]){
+    public void Bubble_sort(int[] arr){
+        int temp;
+        boolean swap;
+        int n = arr.length;
+
+        for (int i=0; i < n - 1 ;i++){
+            swap = false;
+            for (int j=0; j < n - i -1; j++){
+
+                if (arr[j] > arr[j+1]){
+
+                    temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                    swap = true;
+
+                }
+            }
+            if (swap == false)
+                break;
+        }
 
     }
     
 
-    public void Selection_sort(int arr[]){
+    public void Selection_sort(int[] arr){
 
         for (int i=0; i < arr.length - 1; i++){
 
@@ -25,13 +60,13 @@ public class SortingAlgorithm {
             arr[min_num] = arr[i];
             arr[i] = temp;
         }
-
     }
 
-    public void printArray(int arr[]){
+    public void printArray(int[] arr){
 
         for (int i = 0; i < arr.length ; i++)
             System.out.println(arr[i] + " ");
+        System.out.println();
     }
 
 
@@ -39,7 +74,8 @@ public class SortingAlgorithm {
     public static void main(String[] args){
         int[] num = {3, 4, 67, 3, 32, 35, 76, 67, 22, 45};
         SortingAlgorithm ss = new SortingAlgorithm();
-        ss.Selection_sort(num);
+        // ss.Selection_sort(num);
+        ss.Insertion_sort(num);
         System.out.println("Sorted list");
         ss.printArray(num);
     }
