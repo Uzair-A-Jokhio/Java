@@ -31,7 +31,6 @@ public class SortingAlgorithm {
             return;
         }
         // algorithm starts here
-
         int temp;
         boolean swap;
         int n = arr.length;

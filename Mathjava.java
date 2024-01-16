@@ -1,6 +1,4 @@
 public class Mathjava {
-
-
     void Powtable(){
         int a = 1 ;
         System.out.println("a\t"+ "a^2\t" +  "a^3\t");
@@ -10,8 +8,6 @@ public class Mathjava {
         }
     }
     
-
-
     void sum(){
         double a = 9.5, b=4.5, c= 2.5, d = 3, e =45.5, f =3.5;
         double x = (a*b) - (c*d);
@@ -32,7 +28,13 @@ public class Mathjava {
         
     }
 
+    double factorial(double n){
+        if (n == 0 || n==1 );
+            return n;
+        else{
 
+        }
+    }   
 
     public static double pow(double d, int i) {
         return 0;
