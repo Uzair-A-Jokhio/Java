@@ -12,22 +12,22 @@ public class Price{
         this.quantity = qu;
     }
 
-    static class small{
-        static void calculatePrice(double price,int quantity){
+    static class small {
+        static void calculatePrice(double price,int quantity) {
             double totalprice = price * quantity;
             System.out.println("Small Size Total Price: " + totalprice);
         }
     }
 
     static class medium {
-        static void calculatePrice(double price, int quantity){
+        static void calculatePrice(double price, int quantity) {
             double totalprice = price * quantity * 1.2;
             System.out.println("Medium Size Total Price: " + totalprice);
         }
     }
 
-    static class large{
-        static void calculatePrice(double price, int quantity){
+    static class large {
+        static void calculatePrice(double price, int quantity) {
             double totalprice = price * quantity * 2.5;
             System.out.println("Large Size Total Price: " + totalprice);
         }
