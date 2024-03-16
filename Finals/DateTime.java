@@ -1,6 +1,6 @@
 package Finals;
 
-/*
+/*          QUS No 2
 Develop a class DATE_TIME with to create the object of 8th April
 2019 at 10:00AM
  */

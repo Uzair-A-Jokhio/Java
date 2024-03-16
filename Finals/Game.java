@@ -1,5 +1,5 @@
 package Finals;
-/*
+/*      QUS 3
  A student develops a game with help menu, player_contol and
 top_score. Guide the student in development by defining the class ‘GAME’ with
 the appropriate methods for following implementation:
@@ -25,13 +25,17 @@ public class Game {
         this.Top_score = 0;
     }
 
-    public void setLeft(boolean left){ this.left = left;}
-    public void setRight(boolean right){ this.right = right;}
-    public void setForward(boolean forward){this.forward = forward;}
-    public void setBackward(boolean Back){this.backward = Back;}
+    public void setLeft(boolean left){ 
+        this.left = left;}
+    public void setRight(boolean right){ 
+        this.right = right;}
+    public void setForward(boolean forward){
+        this.forward = forward;}
+    public void setBackward(boolean Back){
+        this.backward = Back;}
 
     public String getPlayerStatus(){
-        return "Player Control: Left " + left + " Right " + right + " Forward " + forward + " Backward " + backward;
+        return "Player Control: Left: " + left + " Right: " + right + " Forward: " + forward + " Backward: " + backward;
     }
 
     public int getTopScore(){
